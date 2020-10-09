@@ -1,187 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@300;400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/styles.min.css">
-    <title>Fictional pet brand | Bark</title>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>Fictional Pet Brand | Bark</title>
+  </head>
 
-<body>
-    <header>
-        <img class="header__logo" src="./assets/svg/logo.svg" alt="Bark Logo">
-        <div class="burger">
-            <img class="burger__icon" src="./assets/svg/menu.svg" alt="Menu Icon">
+  <body>
+    <header class="layout--flex">
+      <div class="header__container layout--flex">
+        <img class="header__logo" src="./assets/svg/logo.svg" alt="Bark Logo" />
+        <div id="burgerMenu" class="burger">
+          <img
+            class="burger__icon"
+            src="./assets/svg/menu.svg"
+            alt="Menu Icon"
+          />
         </div>
-        <nav class="text--center">
-            <ul>
-                <li><a href="/">Active</a></li>
-                <li><a href="/">Link One</a></li>
-                <li><a href="/">Link Two</a></li>
-                <li><a href="/">Link Three</a></li>
-            </ul>
-        </nav>
+      </div>
+      <nav id="navigation">
+        <div class="navigation__container layout--flex text--center">
+          <ul>
+            <li><a class="active" href="/">Active</a></li>
+            <li><a href="/">Link One</a></li>
+            <li><a href="/">Link Two</a></li>
+            <li><a href="/">Link Three</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <article>
-        <!-- Hero Section -->
-        <section class="hero layout--flex">
-            <h1 class="hero__heading text--center text--white text--regular">Vestibulum Fusce Aenean Dolor</h1>
-            <button class="btn btn--signup btn--orange btn--center text--uppercase">
-                Sign up
-            </button>
-            <picture>
-                <source media="(min-width: 768px)" srcset="./assets/png/dog-hero@2x.png">
-                <img class="hero__image" src="./assets/png/dog-hero.png">
-            </picture>
-        </section>
-        <!-- Carousel Section -->
-        <section class="carousel text--center">
-            <h2 class="carousel__heading "><img class="carousel__heading--icon" src="./assets/svg/shape-paw.svg"
-                    alt="Paw Print">Our Best Sellers</h2>
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./assets/png/product2@2x.png">
-                            <img class="slide__image" src="./assets/png/product2.png">
-                        </picture>
-                        <p>Natures Menu Senior Dog Food Pouch Lamb with Chicken</p>
-                        <span class="slide__price text--orange">&pound;11.92</span>
-                        <a class="btn btn--orange btn--center text--uppercase" href="">
-                            View More
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./assets/png/product2@2x.png">
-                            <img class="slide__image" src="./assets/png/product2.png">
-                        </picture>
-                        <p>Natures Menu Senior Dog Food Pouch Lamb with Chicken</p>
-                        <span class="slide__price text--orange">&pound;11.92</span>
-                        <a class="btn btn--orange btn--center text--uppercase" href="">
-                            View More
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./assets/png/product2@2x.png">
-                            <img class="slide__image" src="./assets/png/product2.png">
-                        </picture>
-                        <p>Natures Menu Senior Dog Food Pouch Lamb with Chicken</p>
-                        <span class="slide__price text--orange">&pound;11.92</span>
-                        <a class="btn btn--orange btn--center text--uppercase" href="">
-                            View More
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+      <!-- Hero Section -->
+      <section class="hero layout--flex">
+        <h1 class="hero__heading text--center text--white text--regular">
+          Vestibulum Fusce Aenean Dolor
+        </h1>
+        <button class="btn btn--signup btn--orange btn--center text--uppercase">
+          Sign up
+        </button>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/png/dog-hero@2x.png"
+          />
+          <img class="hero__image" src="./assets/png/dog-hero.png" />
+        </picture>
+      </section>
+      <!-- Carousel Section -->
+      <section class="carousel text--center">
+        <h2 class="carousel__heading">
+          <img
+            class="carousel__heading--icon"
+            src="./assets/svg/shape-paw.svg"
+            alt="Paw Print"
+          />Our Best Sellers
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/png/product1@2x.png"
+                />
+                <img
+                  class="swiper-slide__image"
+                  src="./assets/png/product1.png"
+                />
+              </picture>
+              <div class="swiper-slide__content">
+                <p class="text--light">Natures Menu Dog Food Can Chicken</p>
+                <span class="swiper-slide__price text--orange text--bold"
+                  >&pound;22.81</span
+                >
+                <a class="btn btn--orange btn--center text--uppercase" href="#">
+                  View More
+                </a>
+              </div>
             </div>
-
-        </section>
-        <!-- About Section -->
-        <section class="about text--center">
-            <div class="creative layout--relative">
-                <img src="./assets/svg/shape-blob.svg" alt="Blob Shape" class="creative__blob layout--absolute">
-                <!-- <img src="./assets/svg/shape-circle.svg" alt="Circle Shape" class="creative__circle "> -->
-                <div class="creative__circle layout--relative">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="./assets/png/dog@2x.png">
-                        <img class="creative__image layout--absolute" src="./assets/png/dog.png">
-                    </picture>
-                </div>
-            </div>
-            <h3 class="about__heading">Ornare Vulputate Elit</h3>
-            <p class="about__para text--grey text--light">Nullam quis risus eget urna mollis ornare vel eu leo. Fusce
-                dapibus,
-                tellus ac cursus
-                commodo, tortor
-                mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed
-                consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <a class="btn btn--orange btn--center text--uppercase" href="">
-                Learn More
-            </a>
-        </section>
-        <!-- Promo Section -->
-        <section class="promo promo--bg text--center layout-flex">
-            <div class="promo__content">
-                <img class="promo__icon" src="./assets/svg/shape-paw.svg" alt="Paw Print">
-                <h3>Spend £40 for Free Delivery!*</h3>
-                <p class="text--light text--grey">*Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/png/product2@2x.png"
+                />
+                <img
+                  class="swiper-slide__image"
+                  src="./assets/png/product2.png"
+                />
+              </picture>
+              <div class="swiper-slide__content">
+                <p class="text--light">
+                  Natures Menu Senior Dog Food Pouch Lamb with Chicken
                 </p>
+                <span class="swiper-slide__price text--orange text--bold"
+                  >&pound;11.92</span
+                >
+                <a class="btn btn--orange btn--center text--uppercase" href="#">
+                  View More
+                </a>
+              </div>
             </div>
-        </section>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/png/product3@2x.png"
+                />
+                <img
+                  class="swiper-slide__image"
+                  src="./assets/png/product3.png"
+                />
+              </picture>
+              <div class="swiper-slide__content">
+                <p class="text--light">Real Meaty Dog Treats with Beef</p>
+                <span class="swiper-slide__price text--orange text--bold"
+                  >&pound;2.09</span
+                >
+                <a class="btn btn--orange btn--center text--uppercase" href="#">
+                  View More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="control swiper-button-prev">
+            <img src="./assets/svg/chevron-prev.svg" />
+          </div>
+          <div class="control swiper-button-next">
+            <img src="./assets/svg/chevron-next.svg" />
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about text--center">
+        <div class="creative layout--relative">
+          <img
+            src="./assets/svg/shape-blob.svg"
+            alt="Blob Shape"
+            class="creative__blob layout--absolute"
+          />
+          <!-- <img src="./assets/svg/shape-circle.svg" alt="Circle Shape" class="creative__circle "> -->
+          <div class="creative__circle layout--relative">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/png/dog@2x.png"
+              />
+              <img
+                class="creative__image layout--absolute"
+                src="./assets/png/dog.png"
+              />
+            </picture>
+          </div>
+        </div>
+        <h3 class="about__heading">Ornare Vulputate Elit</h3>
+        <p class="about__para text--grey text--light">
+          Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus,
+          tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+          massa justo sit amet risus. Aenean lacinia bibendum nulla sed
+          consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at
+          eros.
+        </p>
+        <a class="btn btn--orange btn--center text--uppercase" href="">
+          Learn More
+        </a>
+      </section>
+      <!-- Promo Section -->
+      <section class="promo promo--bg text--center layout-flex">
+        <div class="promo__content">
+          <img
+            class="promo__icon"
+            src="./assets/svg/shape-paw.svg"
+            alt="Paw Print"
+          />
+          <h3>Spend £40 for Free Delivery!*</h3>
+          <p class="text--light text--grey">
+            *Integer posuere erat a ante venenatis dapibus posuere velit
+            aliquet.
+          </p>
+        </div>
+      </section>
+      <section class="modal">
+        <div class="modal__image">
+          <picture>
+            <!-- <source
+              media="(min-width: 768px)"
+              srcset="./assets/png/dog-popup@2x.png"
+            />
+            <img
+              class="creative__image layout--absolute"
+              src="./assets/png/dog-popup.png"
+            /> -->
+          </picture>
+        </div>
+        <div class="modal__content text--center">
+          <h3>Newsletter Sign Up</h3>
+          <form action="">
+            <input type="text" name="email" placeholder="Name" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <p class="text--light">
+              Donec id elit non mi porta gravida at eget metus.
+            </p>
+            <button
+              class="btn btn--signup btn--orange btn--center text--uppercase"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
+      </section>
     </article>
     <!-- Footer -->
     <footer>
-        <div class="footer__info layout--flex layout--relative">
-            <div class="footer__logo">
-                <img src="./assets/svg/logo.svg" alt="Bark Logo">
-            </div>
-            <div class="footer__links layout--flex text--uppercase">
-                <div class="layout--column">
-                    <ul>
-                        <li><a href="#">Consectetur</a></li>
-                        <li><a href="#">Ullamcorper</a></li>
-                        <li><a href="#">Nullam</a></li>
-                        <li><a href="#">Inceptos</a></li>
-                        <li><a href="#">Bibendum</a></li>
-                    </ul>
-                </div>
-                <div class="layout--column">
-                    <ul>
-                        <li><a href="#">Consectetur</a></li>
-                        <li><a href="#">Ullamcorper</a></li>
-                        <li><a href="#">Nullam</a></li>
-                        <li><a href="#">Inceptos</a></li>
-                        <li><a href="#">Bibendum</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <button class="btn-text btn--signup text--orange text--left text--regular">Click here to sign up <img
-                        class="btn-text__icon" src="./assets/svg/arrow-forward.svg" alt="Arrow Forwards"></button>
-                <div class="footer__social layout--flex">
-                    <a href="#"><img src="./assets/svg/social-fb.svg" alt="Facebook"></a>
-                    <a href="#"><img src="./assets/svg/social-insta.svg" alt="Instagram"></a>
-                    <a href="#"><img src="./assets/svg/social-tw.svg" alt="Twitter"></a>
-                    <a href="#"><img src="./assets/svg/social-yt.svg" alt="Youtube"></a>
-                </div>
-            </div>
+      <div class="footer__info layout--flex layout--relative">
+        <div class="footer__logo">
+          <img src="./assets/svg/logo.svg" alt="Bark Logo" />
         </div>
-
-        <div class="footer__buisness">
-            <hr>
-
-            <div class="layout--flex">
-                <div class="footer__payments layout--flex">
-                    <img src="./assets/svg/payment-paypal.svg" alt="Paypal">
-                    <img src="./assets/svg/payment-mastercard.svg" alt="Mastercard">
-                    <img src="./assets/svg/payment-visa.svg" alt="Visa">
-                    <img src="./assets/svg/payment-amex.svg" alt="Amex">
-                    <img src="./assets/svg/payment-maestro.svg" alt="Maestro">
-                    <img src="./assets/svg/payment-klarna.svg" alt="Klarna">
-                    <img src="./assets/svg/payment-apple.svg" alt="Apple Pay">
-                    <img src="./assets/svg/payment-google.svg" alt="Google Pay">
-                </div>
-                <div class="footer__copyright text--grey">
-                    <p>&copy <span class="year"></span> Bark Ltd. All Right Reserved</p>
-                </div>
-            </div>
-
+        <div class="footer__links layout--flex text--uppercase">
+          <div class="layout--column">
+            <ul>
+              <li><a href="#">Consectetur</a></li>
+              <li><a href="#">Ullamcorper</a></li>
+              <li><a href="#">Nullam</a></li>
+              <li><a href="#">Inceptos</a></li>
+              <li><a href="#">Bibendum</a></li>
+            </ul>
+          </div>
+          <div class="layout--column">
+            <ul>
+              <li><a href="#">Consectetur</a></li>
+              <li><a href="#">Ullamcorper</a></li>
+              <li><a href="#">Nullam</a></li>
+              <li><a href="#">Inceptos</a></li>
+              <li><a href="#">Bibendum</a></li>
+            </ul>
+          </div>
         </div>
+        <div>
+          <button
+            class="btn-text btn--signup text--orange text--left text--regular"
+          >
+            Click here to sign up
+            <img
+              class="btn-text__icon"
+              src="./assets/svg/arrow-forward.svg"
+              alt="Arrow Forwards"
+            />
+          </button>
+          <div class="footer__social layout--flex">
+            <a href="#"
+              ><img src="./assets/svg/social-fb.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="./assets/svg/social-insta.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./assets/svg/social-tw.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="./assets/svg/social-yt.svg" alt="Youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__buisness">
+        <hr />
+
+        <div class="layout--flex">
+          <div class="footer__payments layout--flex">
+            <img src="./assets/svg/payment-paypal.svg" alt="Paypal" />
+            <img src="./assets/svg/payment-mastercard.svg" alt="Mastercard" />
+            <img src="./assets/svg/payment-visa.svg" alt="Visa" />
+            <img src="./assets/svg/payment-amex.svg" alt="Amex" />
+            <img src="./assets/svg/payment-maestro.svg" alt="Maestro" />
+            <img src="./assets/svg/payment-klarna.svg" alt="Klarna" />
+            <img src="./assets/svg/payment-apple.svg" alt="Apple Pay" />
+            <img src="./assets/svg/payment-google.svg" alt="Google Pay" />
+          </div>
+          <div class="footer__copyright text--grey">
+            <p>&copy <span class="year"></span> Bark Ltd. All Right Reserved</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.min.js"></script>
-</body>
-
+  </body>
 </html>

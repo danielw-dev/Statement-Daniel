@@ -7,11 +7,18 @@
   border-bottom-left-radius: 80% 60px;
   border-bottom-right-radius: 80% 60px;
 
+  @media only screen and (min-width: $breakpoint-tablet) {
+    border-bottom-left-radius: 100% 150px;
+    border-bottom-right-radius: 100% 150px;
+  }
+
   .hero__heading {
     font-size: 30px;
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
+    @media only screen and (min-width: $breakpoint-tablet) {
+    }
   }
 
   .hero__image {
@@ -22,5 +29,8 @@
     bottom: -5px;
     transform: rotate(-8deg);
     float: right;
+    @media only screen and (min-width: $breakpoint-tablet) {
+      width: 30%;
+    }
   }
 }
