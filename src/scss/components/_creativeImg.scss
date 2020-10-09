@@ -1,0 +1,24 @@
+.creative {
+  width: 250px;
+  margin: 0 auto;
+  .creative__circle {
+    width: 250px;
+    background: $secondary;
+    height: 250px;
+    display: block;
+    border-radius: 100%;
+    z-index: 10;
+  }
+  .creative__blob {
+    top: -30px;
+    left: -35px;
+    width: 90%;
+    z-index: 5;
+  }
+  .creative__image {
+    width: 95%;
+    z-index: 10;
+    top: -23px;
+    right: 2px;
+  }
+}

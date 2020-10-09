@@ -1,0 +1,52 @@
+.promo {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.promo--bg {
+    background-image: url(../../assets/png/pattern-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      background-image: url(../../assets/png/pattern-desktop.png);
+    }
+  }
+
+  .promo__icon {
+    width: 20px;
+  }
+  .promo__content {
+    width: 50%;
+    h3 {
+      font-size: 26px;
+      margin: 18px;
+      line-height: 30px;
+    }
+    p {
+      line-height: 16px;
+      font-size: 12px;
+      padding: 0 30px;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    height: 550px;
+    .promo__icon {
+      width: 30px;
+    }
+
+    .promo__content {
+      width: 20%;
+      h3 {
+        font-size: 38px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

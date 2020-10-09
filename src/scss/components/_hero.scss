@@ -1,0 +1,26 @@
+.hero {
+  background-color: $secondary;
+  padding-top: 180px;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-bottom-left-radius: 80% 60px;
+  border-bottom-right-radius: 80% 60px;
+
+  .hero__heading {
+    font-size: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .hero__image {
+    margin-top: 50px;
+    width: 60%;
+    position: relative;
+    right: 0;
+    bottom: -5px;
+    transform: rotate(-8deg);
+    float: right;
+  }
+}

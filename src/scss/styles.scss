@@ -1,0 +1,16 @@
+@import "./theme/reset";
+@import "./theme/breakpoints";
+@import "./theme/colours";
+@import "./theme/typography";
+@import "./theme/layout";
+
+//Components
+@import "./components/btns";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/hero";
+@import "./components/carousel";
+@import "./components/about";
+@import "./components/creativeImg";
+@import "./components/promo";
+@import "./components/footer";

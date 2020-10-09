@@ -1,0 +1,110 @@
+footer {
+  padding: 60px 30px;
+  .footer__info {
+    flex-direction: column;
+    max-width: 1200px;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer__logo {
+      img {
+        filter: invert(1);
+        width: 100px;
+      }
+    }
+
+    .footer__links {
+      margin: 20px 0;
+      div:first-child {
+        margin-right: 60px;
+        li:nth-child(2) a {
+          color: $black;
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          a {
+            line-height: 28px;
+            letter-spacing: 1.4px;
+            font-size: 12px;
+            text-decoration: none;
+            color: $grey;
+          }
+        }
+      }
+      @media only screen and (min-width: $breakpoint-tablet) {
+        margin: 0;
+        ul {
+          margin: 0;
+        }
+      }
+    }
+    .footer__social {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      justify-content: flex-start;
+      a {
+        margin-right: 25px;
+        &:first-child img {
+          width: 10px;
+        }
+        img {
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  .footer__buisness {
+    max-width: 1200px;
+    > .layout--flex {
+      flex-direction: column;
+      @media only screen and (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .footer__payments {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      img {
+        width: 40px;
+        margin: 0 5px 5px 0;
+      }
+    }
+
+    .footer__copyright {
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      @media only screen and (min-width: $breakpoint-tablet) {
+        margin-left: 40px;
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+    @media only screen and (min-width: $breakpoint-tablet) {
+      position: absolute;
+      right: 60px;
+      width: 66%;
+    }
+    @media only screen and (min-width: $breakpoint-desktop) {
+      width: 70%;
+    }
+  }
+
+  //Footer Media Query
+  @media only screen and (min-width: $breakpoint-tablet) {
+    padding: 80px 60px;
+    margin-bottom: 50px;
+  }
+}

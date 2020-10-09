@@ -1,0 +1,47 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+//Font Style
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--left {
+  text-align: left;
+}
+
+//Font Colours
+.text--black {
+  color: $black;
+}
+
+.text--white {
+  color: $white;
+}
+
+.text--orange {
+  color: $primary;
+}
+
+.text--grey {
+  color: $grey;
+}
+
+//Font Weights
+.text--light {
+  font-weight: 300;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text--semi {
+  font-weight: 600;
+}
+.text--bold {
+  font-weight: 700;
+}
