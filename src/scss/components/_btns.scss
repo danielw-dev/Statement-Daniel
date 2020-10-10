@@ -13,6 +13,7 @@
   border: none;
   cursor: pointer;
   transition: 0.3s ease-in-out all;
+  margin-top: 20px;
 
   &.btn--orange {
     background-color: $primary;
@@ -37,6 +38,7 @@
   padding: 0;
   font-size: 24px;
   line-height: 28px;
+  cursor: pointer;
 
   .btn-text__icon {
     width: 20px;

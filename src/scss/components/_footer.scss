@@ -65,7 +65,7 @@ footer {
     max-width: 1200px;
     > .layout--flex {
       flex-direction: column;
-      @media only screen and (min-width: $breakpoint-tablet) {
+      @media only screen and (min-width: $breakpoint-desktop) {
         flex-direction: row;
         align-items: center;
       }
@@ -85,25 +85,22 @@ footer {
         font-size: 14px;
         line-height: 20px;
       }
-      @media only screen and (min-width: $breakpoint-tablet) {
+      @media only screen and (min-width: $breakpoint-desktop) {
         margin-left: 40px;
         p {
           margin-top: 10px;
         }
       }
     }
-    @media only screen and (min-width: $breakpoint-tablet) {
+    @media only screen and (min-width: $breakpoint-desktop) {
       position: absolute;
       right: 60px;
-      width: 66%;
-    }
-    @media only screen and (min-width: $breakpoint-desktop) {
       width: 70%;
     }
   }
 
   //Footer Media Query
-  @media only screen and (min-width: $breakpoint-tablet) {
+  @media only screen and (min-width: $breakpoint-desktop) {
     padding: 80px 60px;
     margin-bottom: 50px;
   }

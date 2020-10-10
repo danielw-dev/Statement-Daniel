@@ -1,3 +1,4 @@
+// Best Sellers Carousel 
 var mySwiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: false,
@@ -41,7 +42,6 @@ var mySwiper = new Swiper(".swiper-container", {
 var burgerMenu = document.getElementById('burgerMenu');
 var navigation = document.getElementById('navigation');
 
-console.log();
 burgerMenu.addEventListener('click', function(){
   if(navigation.classList.contains("show")){
     navigation.classList.remove('show');
@@ -55,3 +55,29 @@ burgerMenu.addEventListener('click', function(){
     burgerMenu.children[0].classList.toggle('active');
   }
 });
+
+// Modal Close Function
+var modal = document.querySelector('.modal');
+
+function closeModal(){
+  console.log(this);
+  modal.classList.add('animateOut');
+
+  setTimeout(function(){
+    modal.classList.remove('visible', 'animateIn', 'animateOut');
+  }, 1000)
+}
+
+// Modal Open
+
+var modalTrigger = document.querySelectorAll('.btn--signup');
+
+modalTrigger.forEach(addTrigger);
+
+function addTrigger(button, i){
+  button.addEventListener('click', function() {
+
+    modal.classList.add('visible', 'animateIn');
+    // console.log(modal.childNodes);
+  });
+}

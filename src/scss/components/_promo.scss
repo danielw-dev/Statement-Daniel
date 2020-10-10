@@ -38,7 +38,7 @@
     }
 
     .promo__content {
-      width: 20%;
+      width: 40%;
       h3 {
         font-size: 38px;
         line-height: 44px;
@@ -47,6 +47,11 @@
         font-size: 14px;
         line-height: 20px;
       }
+    }
+  }
+  @media only screen and (min-width: $breakpoint-desktop) {
+    .promo__content {
+      width: 20%;
     }
   }
 }

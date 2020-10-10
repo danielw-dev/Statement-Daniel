@@ -1,0 +1,145 @@
+.modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba($black, 0.7);
+
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in all;
+
+  &.visible {
+    display: flex;
+  }
+
+  &.animateIn {
+    animation-name: fadeInOverlay;
+    animation-duration: 1s;
+
+    .modal__container {
+      animation-name: fadeInBox;
+      animation-duration: 1s;
+    }
+  }
+
+  &.animateOut {
+    animation-name: fadeOutOverlay;
+    animation-duration: 1s;
+
+    .modal__container {
+      animation-name: fadeOutBox;
+      animation-duration: 1s;
+    }
+  }
+
+  .modal__container {
+    background: $white;
+    width: 80%;
+    border-radius: 4px;
+    height: auto;
+    overflow-y: scroll;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 1050px;
+    z-index: 10;
+
+    .modal__close {
+      width: 50px;
+      right: 0;
+      padding: 17px;
+      cursor: pointer;
+    }
+
+    .modal__image {
+      padding-top: 10px;
+      background: $light-grey;
+      img {
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        bottom: -4px;
+      }
+      @media only screen and (min-width: $breakpoint-desktop) {
+        width: 50%;
+        img {
+          width: 80%;
+        }
+      }
+    }
+    .modal__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 10px 30px 40px 30px;
+      h3 {
+        line-height: 25px;
+        font-size: 22px;
+        min-width: 200px;
+        margin: 20px auto;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+      }
+      @media only screen and (min-width: $breakpoint-desktop) {
+        width: 50%;
+        padding: 10px 60px 40px 60px;
+        h3 {
+          font-size: 28px;
+          line-height: 33px;
+          margin-bottom: 50px;
+        }
+        p {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  @keyframes fadeInBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeInOverlay {
+    from {
+      background-color: transparent;
+    }
+    to {
+      background-color: rgba($black, 0.7);
+    }
+  }
+
+  @keyframes fadeOutBox {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes fadeOutOverlay {
+    from {
+      background-color: rgba($black, 0.7);
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+}

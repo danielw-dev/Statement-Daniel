@@ -1,2 +1,33 @@
 # statement-tech-test
- Technical Test | Statement
+
+# Technical Test | Statement | Daniel
+
+## Requirements​.
+
+### Please demonstrate the below technical skills:
+
+    ● Mobile first build. (Done)
+
+    ● Demonstrate the use of SASS or LESS. (Done)
+
+    ● A naming convention such as BEM, for easy to follow css   classes and structure. (BEM - Done)
+
+    ● Implement the modal functionality using JavaScript.
+
+    ● Use animations for the opening/closing of the modal.
+
+    ● Ensure the popup is scrollable on mobiles and tablets.
+
+    ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp)
+
+    ● Build reusable components that could be used on other areas of the website. (Sectioned each component and componatised SCSS without the use of Comps in a framework e.g React)
+
+    ● Use Roboto and Open Sans fonts – which are available via Google Fonts. (Done)
+
+    ● Hovering over each product on desktop will display a View More button, this is permanently displayed on mobile devices. (Done)
+
+## Please don’t:
+
+    ● Use any frameworks for styling or functionality (e.g. Bootstrap, React). (Not Done)
+
+    ● Use any third party plugins providing modal functionality (e.g. Lightbox). (Not Done)

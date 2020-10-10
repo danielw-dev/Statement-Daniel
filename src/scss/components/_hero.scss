@@ -4,33 +4,79 @@
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  border-bottom-left-radius: 80% 60px;
-  border-bottom-right-radius: 80% 60px;
-
-  @media only screen and (min-width: $breakpoint-tablet) {
-    border-bottom-left-radius: 100% 150px;
-    border-bottom-right-radius: 100% 150px;
-  }
+  border-bottom-left-radius: 70% 70px;
+  border-bottom-right-radius: 70% 70px;
 
   .hero__heading {
     font-size: 30px;
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
+    font-weight: 400;
+
     @media only screen and (min-width: $breakpoint-tablet) {
+      font-size: 38px;
+      line-height: 47px;
+    }
+    @media only screen and (min-width: $breakpoint-desktop) {
+      font-size: 48px;
+      line-height: 57px;
+      margin-top: -50px;
     }
   }
 
   .hero__image {
-    margin-top: 50px;
-    width: 60%;
-    position: relative;
-    right: 0;
-    bottom: -5px;
-    transform: rotate(-8deg);
-    float: right;
+    picture {
+      position: relative;
+      right: 0;
+      bottom: -10px;
+      transform: rotate(-8deg);
+      img {
+        width: 60%;
+        float: right;
+        margin-top: 50px;
+      }
+    }
     @media only screen and (min-width: $breakpoint-tablet) {
-      width: 30%;
+      width: 40%;
+      picture {
+        transform: rotate(0);
+
+        img {
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+    @media only screen and (min-width: $breakpoint-desktop) {
+      width: 100%;
+      max-width: 550px;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    border-bottom-left-radius: 80% 120px;
+    border-bottom-right-radius: 80% 120px;
+    padding-top: 150px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .hero__content {
+      width: 50%;
+    }
+    picture {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    border-bottom-left-radius: 80% 120px;
+    border-bottom-right-radius: 80% 120px;
+    padding: 90px 100px 0;
+
+    .hero__content {
+      width: 40%;
     }
   }
 }

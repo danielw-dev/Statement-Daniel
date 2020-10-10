@@ -41,19 +41,25 @@
     <article>
       <!-- Hero Section -->
       <section class="hero layout--flex">
-        <h1 class="hero__heading text--center text--white text--regular">
-          Vestibulum Fusce Aenean Dolor
-        </h1>
-        <button class="btn btn--signup btn--orange btn--center text--uppercase">
-          Sign up
-        </button>
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="./assets/png/dog-hero@2x.png"
-          />
-          <img class="hero__image" src="./assets/png/dog-hero.png" />
-        </picture>
+        <div class="hero__content">
+          <h1 class="hero__heading text--center text--white text--regular">
+            Vestibulum Fusce Aenean Dolor
+          </h1>
+          <button
+            class="btn btn--signup btn--orange btn--center text--uppercase"
+          >
+            Sign up
+          </button>
+        </div>
+        <div class="hero__image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/png/dog-hero@2x.png"
+            />
+            <img src="./assets/png/dog-hero.png" />
+          </picture>
+        </div>
       </section>
       <!-- Carousel Section -->
       <section class="carousel text--center">
@@ -149,38 +155,40 @@
         </div>
       </section>
       <!-- About Section -->
-      <section class="about text--center">
-        <div class="creative layout--relative">
-          <img
-            src="./assets/svg/shape-blob.svg"
-            alt="Blob Shape"
-            class="creative__blob layout--absolute"
-          />
-          <!-- <img src="./assets/svg/shape-circle.svg" alt="Circle Shape" class="creative__circle "> -->
-          <div class="creative__circle layout--relative">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./assets/png/dog@2x.png"
-              />
-              <img
-                class="creative__image layout--absolute"
-                src="./assets/png/dog.png"
-              />
-            </picture>
+      <section class="about text--center layout--flex">
+        <div class="about__image">
+          <div class="creative layout--relative">
+            <img
+              src="./assets/svg/shape-blob.svg"
+              alt="Blob Shape"
+              class="creative__blob layout--absolute"
+            />
+            <!-- <img src="./assets/svg/shape-circle.svg" alt="Circle Shape" class="creative__circle "> -->
+            <div class="creative__circle layout--relative">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/png/dog@2x.png"
+                />
+                <img
+                  class="creative__image layout--absolute"
+                  src="./assets/png/dog.png"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-        <h3 class="about__heading">Ornare Vulputate Elit</h3>
-        <p class="about__para text--grey text--light">
-          Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus,
-          tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus. Aenean lacinia bibendum nulla sed
-          consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at
-          eros.
-        </p>
-        <a class="btn btn--orange btn--center text--uppercase" href="">
-          Learn More
-        </a>
+        <div class="about__content">
+          <h3>Ornare Vulputate Elit</h3>
+          <p class="text--grey text--light">
+            Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus,
+            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+            fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla
+            sed consectetur. Morbi leo risus, porta ac consectetur ac,
+            vestibulum at eros.
+          </p>
+          <a class="btn btn--orange text--uppercase" href=""> Learn More </a>
+        </div>
       </section>
       <!-- Promo Section -->
       <section class="promo promo--bg text--center layout-flex">
@@ -197,39 +205,42 @@
           </p>
         </div>
       </section>
-      <section class="modal">
-        <div class="modal__image">
-          <picture>
-            <!-- <source
-              media="(min-width: 768px)"
-              srcset="./assets/png/dog-popup@2x.png"
-            />
-            <img
-              class="creative__image layout--absolute"
-              src="./assets/png/dog-popup.png"
-            /> -->
-          </picture>
-        </div>
-        <div class="modal__content text--center">
-          <h3>Newsletter Sign Up</h3>
-          <form action="">
-            <input type="text" name="email" placeholder="Name" />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-              required
-            />
-            <p class="text--light">
-              Donec id elit non mi porta gravida at eget metus.
-            </p>
-            <button
-              class="btn btn--signup btn--orange btn--center text--uppercase"
-            >
-              Sign up
-            </button>
-          </form>
+      <section class="modal layout--flex">
+        <div class="modal__container layout--flex layout--relative">
+          <img
+            onclick="closeModal()"
+            class="modal__close layout--absolute"
+            src="./assets/svg/cross.svg"
+            alt="Close Icon"
+          />
+          <div class="modal__image text--center">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/png/dog-popup@2x.png"
+              />
+              <img src="./assets/png/dog-popup.png" />
+            </picture>
+          </div>
+          <div class="modal__content text--center">
+            <h3>Newsletter Sign Up</h3>
+            <form action="">
+              <input type="text" name="email" placeholder="Name" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <p class="text--light">
+                Donec id elit non mi porta gravida at eget metus.
+              </p>
+              <button class="btn btn--orange btn--center text--uppercase">
+                Sign up
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </article>

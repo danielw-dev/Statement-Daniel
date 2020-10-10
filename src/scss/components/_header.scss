@@ -13,7 +13,14 @@ header {
     justify-content: space-between;
     z-index: 30;
     .header__logo {
+      width: 100%;
+      max-width: 100px;
+    }
+    @media only screen and (min-width: $breakpoint-tablet) {
       width: 100px;
     }
+  }
+  @media only screen and (min-width: $breakpoint-desktop) {
+    padding: 30px 70px;
   }
 }

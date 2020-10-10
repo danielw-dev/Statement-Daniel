@@ -21,4 +21,34 @@
     top: -23px;
     right: 2px;
   }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    width: 350px;
+    margin-bottom: 0;
+    .creative__circle {
+      width: 350px;
+      height: 350px;
+    }
+    .creative__image {
+      top: -32px;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    width: 500px;
+    margin-bottom: 0;
+    .creative__circle {
+      width: 500px;
+      height: 500px;
+    }
+    .creative__blob {
+      top: -90px;
+      left: -80px;
+      width: 100%;
+    }
+    .creative__image {
+      top: -45px;
+      right: 4px;
+    }
+  }
 }
