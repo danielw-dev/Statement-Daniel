@@ -41,10 +41,12 @@ var mySwiper = new Swiper(".swiper-container", {
 // Mobile Navigation
 var burgerMenu = document.getElementById("burgerMenu");
 var navigation = document.getElementById("navigation");
+var header = document.getElementsByTagName("header");
 
 burgerMenu.addEventListener("click", function () {
   if (navigation.classList.contains("visible")) {
     navigation.classList.add("animateOut");
+    header[0].classList.remove("fixed");
 
     setTimeout(function () {
       navigation.classList.remove("visible", "animateIn", "animateOut");
@@ -55,6 +57,7 @@ burgerMenu.addEventListener("click", function () {
     navigation.classList.add("visible", "animateIn");
     burgerMenu.children[0].src = "./assets/svg/cross.svg";
     burgerMenu.children[0].classList.toggle("active");
+    header[0].classList.add("fixed");
   }
 });
 

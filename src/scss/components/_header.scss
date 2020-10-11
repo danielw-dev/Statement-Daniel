@@ -7,6 +7,11 @@ header {
   // margin-top: 15px;
   padding: 40px 30px;
 
+  &.fixed {
+    position: fixed;
+    z-index: 50;
+  }
+
   .header__container {
     width: 100%;
     flex-direction: row;
