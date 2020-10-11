@@ -16,7 +16,7 @@
 
     ● Ensure the popup is scrollable on mobiles and tablets. (Done)
 
-    ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp)
+    ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp - Done)
 
     ● Build reusable components that could be used on other areas of the website. (Sectioned each component and componatised SCSS without the use of Comps in a framework e.g React)
 
