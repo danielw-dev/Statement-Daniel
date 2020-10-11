@@ -1,0 +1,56 @@
+// Navigation Animations
+@keyframes expandHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 80%;
+  }
+}
+
+@keyframes collapseHeight {
+  from {
+    height: 80%;
+  }
+  to {
+    height: 0;
+  }
+}
+
+// Modal Animations
+
+@keyframes fadeInBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOverlay {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba($black, 0.7);
+  }
+}
+
+@keyframes fadeOutBox {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeOutOverlay {
+  from {
+    background-color: rgba($black, 0.7);
+  }
+  to {
+    background-color: transparent;
+  }
+}

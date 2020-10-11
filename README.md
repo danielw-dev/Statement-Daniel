@@ -1,5 +1,3 @@
-# statement-tech-test
-
 # Technical Test | Statement | Daniel
 
 ## Requirements​.
@@ -12,11 +10,11 @@
 
     ● A naming convention such as BEM, for easy to follow css   classes and structure. (BEM - Done)
 
-    ● Implement the modal functionality using JavaScript.
+    ● Implement the modal functionality using JavaScript. (Done)
 
-    ● Use animations for the opening/closing of the modal.
+    ● Use animations for the opening/closing of the modal. (CSS Animations - Done)
 
-    ● Ensure the popup is scrollable on mobiles and tablets.
+    ● Ensure the popup is scrollable on mobiles and tablets. (Done)
 
     ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp)
 

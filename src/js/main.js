@@ -1,4 +1,4 @@
-// Best Sellers Carousel 
+// Best Sellers Carousel
 var mySwiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: false,
@@ -34,50 +34,50 @@ var mySwiper = new Swiper(".swiper-container", {
       slidesPerView: 3,
       initialSlide: 1,
       pagination: false,
-    }
-  }
+    },
+  },
 });
 
 // Mobile Navigation
-var burgerMenu = document.getElementById('burgerMenu');
-var navigation = document.getElementById('navigation');
+var burgerMenu = document.getElementById("burgerMenu");
+var navigation = document.getElementById("navigation");
 
-burgerMenu.addEventListener('click', function(){
-  if(navigation.classList.contains("show")){
-    navigation.classList.remove('show');
-    navigation.classList.add('hide');
-    burgerMenu.children[0].src = "./assets/svg/menu.svg";
-    burgerMenu.children[0].classList.toggle('active');
+burgerMenu.addEventListener("click", function () {
+  if (navigation.classList.contains("visible")) {
+    navigation.classList.add("animateOut");
+
+    setTimeout(function () {
+      navigation.classList.remove("visible", "animateIn", "animateOut");
+      burgerMenu.children[0].src = "./assets/svg/menu.svg";
+      burgerMenu.children[0].classList.toggle("active");
+    }, 1000);
   } else {
-    navigation.classList.remove('hide');
-    navigation.classList.add('show');
+    navigation.classList.add("visible", "animateIn");
     burgerMenu.children[0].src = "./assets/svg/cross.svg";
-    burgerMenu.children[0].classList.toggle('active');
+    burgerMenu.children[0].classList.toggle("active");
   }
 });
 
 // Modal Close Function
-var modal = document.querySelector('.modal');
+var modal = document.querySelector(".modal");
 
-function closeModal(){
+function closeModal() {
   console.log(this);
-  modal.classList.add('animateOut');
+  modal.classList.add("animateOut");
 
-  setTimeout(function(){
-    modal.classList.remove('visible', 'animateIn', 'animateOut');
-  }, 1000)
+  setTimeout(function () {
+    modal.classList.remove("visible", "animateIn", "animateOut");
+  }, 1000);
 }
 
 // Modal Open
 
-var modalTrigger = document.querySelectorAll('.btn--signup');
+var modalTrigger = document.querySelectorAll(".btn--signup");
 
 modalTrigger.forEach(addTrigger);
 
-function addTrigger(button, i){
-  button.addEventListener('click', function() {
-
-    modal.classList.add('visible', 'animateIn');
-    // console.log(modal.childNodes);
+function addTrigger(button, i) {
+  button.addEventListener("click", function () {
+    modal.classList.add("visible", "animateIn");
   });
 }

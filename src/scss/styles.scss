@@ -1,10 +1,12 @@
+// Theme
 @import "./theme/reset";
 @import "./theme/breakpoints";
 @import "./theme/colours";
 @import "./theme/typography";
 @import "./theme/layout";
+@import "./theme/animations";
 
-//Components
+// Components
 @import "./components/modal";
 @import "./components/btns";
 @import "./components/header";
