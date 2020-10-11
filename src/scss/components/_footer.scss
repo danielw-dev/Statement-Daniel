@@ -13,7 +13,9 @@ footer {
     .footer__logo {
       img {
         filter: invert(1);
+        -webkit-filter: invert(1);
         width: 100px;
+        height: 100px;
       }
     }
 
