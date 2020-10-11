@@ -1,28 +1,32 @@
 // Best Sellers Carousel
 
-$(document).ready(function(){
+$(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    loop:true,
-    
-    navText: ['<img src="./assets/svg/chevron-prev.svg" />', '<img src="./assets/svg/chevron-next.svg" />'],
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            dots: true,
-        },
-        768:{
-            items:2,
-            dots: true,
-            nav:true,
-        },
-        1024:{
-          center: true,
-          dots: false,
-          nav:true,
-          margin: 20,
-        }
-    }
+    loop: true,
+
+    navText: [
+      '<img src="./assets/svg/chevron-prev.svg" />',
+      '<img src="./assets/svg/chevron-next.svg" />',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        dots: true,
+      },
+      768: {
+        items: 2,
+        dots: true,
+        nav: true,
+      },
+      1024: {
+        center: true,
+        dots: false,
+        nav: true,
+        margin: 20,
+        startPosition: 1,
+      },
+    },
   });
 });
 
@@ -50,27 +54,27 @@ $(document).ready(function(){
 // });
 
 var burgerMenu = $("#burgerMenu");
-var burgerIcon = $('.burger__icon')
-var navigation = $('#navigation');
-var header = $('header');
+var burgerIcon = $(".burger__icon");
+var navigation = $("#navigation");
+var header = $("header");
 
- //Could Also use .fadeIn() and .fadeOut() or .toggleFade();
+//Could Also use .fadeIn() and .fadeOut() or .toggleFade();
 
-$(burgerMenu).on('click', function(){
-  if($(navigation).hasClass('visible')){
-    $(navigation).addClass('animateOut');
-    $(header).removeClass('fixed');
+$(burgerMenu).on("click", function () {
+  if ($(navigation).hasClass("visible")) {
+    $(navigation).addClass("animateOut");
+    $(header).removeClass("fixed");
 
-    setTimeout(function (){
-      $(navigation).removeClass('visible animateIn animateOut');
-      $(burgerIcon).attr('src', './assets/svg/menu.svg').toggleClass('active');
-    }, 1000)
-  } else{
-    $(navigation).addClass('visible animateIn');
-    $(burgerIcon).attr('src', './assets/svg/cross.svg').toggleClass('active');
-    $(header).addClass('fixed');
+    setTimeout(function () {
+      $(navigation).removeClass("visible animateIn animateOut");
+      $(burgerIcon).attr("src", "./assets/svg/menu.svg").toggleClass("active");
+    }, 1000);
+  } else {
+    $(navigation).addClass("visible animateIn");
+    $(burgerIcon).attr("src", "./assets/svg/cross.svg").toggleClass("active");
+    $(header).addClass("fixed");
   }
-})
+});
 
 // Modal Open
 // var modal = document.querySelector(".modal");
