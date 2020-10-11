@@ -16,7 +16,7 @@
 
     ● Ensure the popup is scrollable on mobiles and tablets. (Done)
 
-    ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp)
+    ● Ensure the components are cross-browser friendly (IE9+, Safari, Chrome, Firefox). (CSS Polyfill plugin Gulp - Done)
 
     ● Build reusable components that could be used on other areas of the website. (Sectioned each component and componatised SCSS without the use of Comps in a framework e.g React)
 
@@ -33,7 +33,7 @@
 ## Notes
 
     2 Work flows set up
-        Watch - Complies, watches files for changes and recompiles and then uses browserSync to sync across local network for testing on other devices
-        Build - Complies everything into the build folder to be uploaded
+        Watch - Compiles, watches files for changes and recompiles and then uses browserSync to sync across local network for testing on other devices
+        Build - Compiles everything into the build folder to be uploaded
 
 ### Uploaded here for ease of viewing https://bark.worthington.dev
