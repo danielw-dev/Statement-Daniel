@@ -29,22 +29,24 @@
   }
 }
 
-.swiper-container {
+.owl-carousel {
   max-width: 1400px;
-  width: 100%;
+  width: 90%;
   height: 500px;
   overflow-y: visible;
-  .swiper-slide {
+  margin: 0 auto;
+  .owl-item {
     position: relative;
-    padding: 0px 25px;
+    padding: 0px 10px;
 
-    .swiper-slide__image {
+    .slide__image {
       height: 230px;
       position: relative;
       bottom: -100px;
-      margin-top: -100px;
+      width: auto;
+      margin: -100px auto auto auto;
     }
-    .swiper-slide__content {
+    .slide__content {
       background-color: $light-blue;
       padding: 100px 30px 30px 30px;
       height: 290px;
@@ -57,7 +59,7 @@
         font-size: 18px;
         margin: 0;
       }
-      .swiper-slide__price {
+      .slide__price {
         line-height: 22px;
         font-size: 16px;
         letter-spacing: 1.8px;
@@ -68,9 +70,9 @@
       }
     }
     @media only screen and (min-width: $breakpoint-desktop) {
-      &.swiper-slide-active {
-        .swiper-slide__content {
-          height: 320px;
+      &.center {
+        .slide__content {
+          height: 340px;
         }
       }
       .btn {
@@ -84,15 +86,47 @@
     }
   }
 
-  .control {
-    display: none;
-    @media only screen and (min-width: $breakpoint-desktop) {
-      display: block;
-      img {
-        width: 18px;
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      @media only screen and (min-width: $breakpoint-desktop) {
+        top: 20%;
       }
-      &:after {
-        display: none;
+    }
+    .owl-prev {
+      left: -40px;
+      @media only screen and (min-width: $breakpoint-desktop) {
+        left: -60px;
+      }
+    }
+    .owl-next {
+      right: -40px;
+      @media only screen and (min-width: $breakpoint-desktop) {
+        right: -60px;
+      }
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+    @media only screen and (min-width: $breakpoint-desktop) {
+      display: block !important;
+    }
+  }
+
+  .owl-dots {
+    margin-top: 20px;
+    .owl-dot {
+      width: 10px;
+      height: 10px;
+      background: #e6e6e6;
+      border-radius: 50px;
+      margin: 5px;
+      &.active {
+        background: $black;
       }
     }
   }

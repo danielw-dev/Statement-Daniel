@@ -29,3 +29,11 @@
     ● Use any frameworks for styling or functionality (e.g. Bootstrap, React). (Not Done)
 
     ● Use any third party plugins providing modal functionality (e.g. Lightbox). (Not Done)
+
+## Notes
+
+    2 Work flows set up
+        Watch - Complies, watches files for changes and recompiles and then uses browserSync to sync across local network for testing on other devices
+        Build - Complies everything into the build folder to be uploaded
+
+### Uploaded here for ease of viewing https://bark.worthington.dev
