@@ -62,7 +62,6 @@ burgerMenu.addEventListener("click", function () {
 var modal = document.querySelector(".modal");
 
 function closeModal() {
-  console.log(this);
   modal.classList.add("animateOut");
 
   setTimeout(function () {
