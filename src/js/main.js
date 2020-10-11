@@ -61,19 +61,7 @@ burgerMenu.addEventListener("click", function () {
   }
 });
 
-// Modal Close Function
-var modal = document.querySelector(".modal");
-
-function closeModal() {
-  modal.classList.add("animateOut");
-
-  setTimeout(function () {
-    modal.classList.remove("visible", "animateIn", "animateOut");
-  }, 1000);
-}
-
 // Modal Open
-
 var modalTrigger = document.querySelectorAll(".btn--signup");
 
 modalTrigger.forEach(addTrigger);
@@ -82,4 +70,15 @@ function addTrigger(button, i) {
   button.addEventListener("click", function () {
     modal.classList.add("visible", "animateIn");
   });
+}
+
+// Modal Close
+var modal = document.querySelector(".modal");
+
+function closeModal() {
+  modal.classList.add("animateOut");
+
+  setTimeout(function () {
+    modal.classList.remove("visible", "animateIn", "animateOut");
+  }, 1000);
 }
